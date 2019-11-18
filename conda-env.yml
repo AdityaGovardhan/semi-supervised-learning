@@ -1,5 +1,5 @@
 ---
-name: img-search
+name: ss-learn
 channels:
   - defaults
 dependencies:
