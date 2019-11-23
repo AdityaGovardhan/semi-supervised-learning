@@ -9,6 +9,8 @@ class Twenty_Newsgroups:
   def __init__(self):
     pass
 
+  # Returns a dictionary with keys as the collection name
+  # and value as a list of {filename, filedata} dicts
   def get_all_training_articles(self):
     collectionwise_training_folders = os.listdir(TWENTY_NEWSGROUPS_TRAINING_DIR)
 
@@ -28,6 +30,8 @@ class Twenty_Newsgroups:
 
     return collectionwise_training_dataset
 
+  # Returns a dictionary with single key as the requested collection name
+  # and value as a list of {filename, filedata} dicts
   def get_all_training_articles_for_collection(self, collection_name):
 
     collectionwise_training_dataset = dict()
@@ -45,6 +49,8 @@ class Twenty_Newsgroups:
 
     return collectionwise_training_dataset
 
+  # Returns a dictionary with keys as the collection name
+  # and value as a list of {filename, filedata} dicts
   def get_all_testing_articles(self):
     collectionwise_testing_folders = os.listdir(TWENTY_NEWSGROUPS_TESTING_DIR)
 
@@ -64,6 +70,8 @@ class Twenty_Newsgroups:
 
     return collectionwise_testing_dataset
 
+  # Returns a dictionary with single key as the requested collection name
+  # and value as a list of {filename, filedata} dicts
   def get_all_testing_articles_for_collection(self, collection_name):
 
     collectionwise_testing_dataset = dict()
